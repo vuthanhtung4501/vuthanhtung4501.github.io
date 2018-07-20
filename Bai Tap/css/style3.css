@@ -1,0 +1,98 @@
+*{
+	margin: auto;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	color: red;
+}
+
+
+img	{
+	border: 1px solid red;
+	border-radius: 20%;
+}
+
+.banner {
+	max-width: 1000px;
+	margin: auto;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	position: relative;
+
+
+}
+
+.deep{
+	float: left;	 
+	width: 300px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.deep:hover img{
+	opacity: 0.8;
+	transform: scale(1.2);
+	
+}
+
+.bad{
+	float: left;	 
+	width: 300px;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+	
+}
+
+.bad:hover {
+	transform: translate(0, -5px);
+	box-shadow: 0px 5px 5px 0px rgba(0 , 0, 0, 0.2)
+}
+
+h6{
+	position: absolute;
+	right: 123px;
+    bottom: -621px;
+    font-size: 20px;
+    color: 	#C60000;
+    opacity: 0;
+
+
+}
+
+@keyframes title {
+	 0%  {background-color: blue; color: grey;}
+    25%  {background-color: red; color: green;}
+    50%  {background-color: #FCF54C; color: #64004B;}
+    75%  {background-color: #FFCCFF; color: #000033;}
+    100% {background-color: #97FFFF; color: #8B7765;}
+}
+
+@keyframes slice {
+	0% {opacity: 0;}
+	25% {opacity:0.25;}
+	50% {opacity: 0.5;}
+	75% {opacity:0.25;}
+	100% {opacity: 0;}
+}
+
+h1{
+	animation: title 5s ease infinite;
+}
+
+h6{
+	animation: slice 5s ease infinite;
+
+
+
+
+
+}
