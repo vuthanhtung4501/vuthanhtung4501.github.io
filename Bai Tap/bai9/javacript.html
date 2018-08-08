@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+// Bai1        
+        function hamso(x) {
+            return Math.pow(x,2);
+        }
+// Bai2
+        function tinhtoan(a,b,c) {
+            return Math.pow((3*a+2*b-c)**2);
+        }
+// Bai3       
+        function catchuoi() {
+            var comment="Xin Chào các bạn nhỏ của tôi nhé";
+            document.write(comment.slice(20,30));
+            console.log(comment.slice(20,30));
+        }
+// Bai4
+        function viethoa() {
+            var title="welcome to hanoi".toUpperCase();
+            console.log(title);
+        }
+// Bai5       
+        function nhonhat() {
+            var sapxep=[9,3,5,7,2,1,8];
+            console.log(sapxep.sort());
+        }
+// Bai6
+        function tenchon(x) {
+            x.sort(function(a,b){return a.localeCompare (b)});   
+            document.write(x);
+        }
+// Bai7
+        var teacher = { 
+            firstName: "Hương",
+            lastName: "Mai",
+            age: 29,
+            say: function(){}
+        }
+        var student= {
+            firstName: "Tiến",
+            lastName: "Đạt",
+            age:18,
+            say: function(){}
+        }
+        var parent= {
+            firstName: "Phương",
+            lastName:"Thảo",
+            age:40,
+            say: function(){}
+        }
+        var aboutMe = function(){
+            return("xin chao")
+        }
+        
+        teacher.say = aboutMe;
+        student.say = aboutMe;
+        parent.say = aboutMe;
+        teacher.say();
+        student.say();
+        parent.say();
+    </script>
+</head>
+</html>
