@@ -1,0 +1,50 @@
+.banner{
+    width: 1000px;
+    margin: auto;
+    position: relative;   
+}
+
+#poster img{
+    width: 1000px;
+    height: 500px;
+}
+
+.menu{
+    display: inline-block;
+    background: yellowgreen;
+    height: 1554px;
+    width: 238px;
+    float: left;
+    position: absolute;
+    left: -241px;
+    top: 11px;
+}
+
+.menu div {
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 0;
+}
+
+.menu div a{
+    text-decoration: none;
+
+}
+
+.thumb img{
+    padding-top:20px;
+    padding-right: 3px;
+    float: left;
+    width: 33%;
+}
+.top{
+    position: relative;
+}
+.btt img{
+    width: 50px;
+    position: absolute;
+    right: 58px;
+    bottom: -1039px ;
+}
+
+
