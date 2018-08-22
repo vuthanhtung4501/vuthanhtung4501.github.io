@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // BAI1
+                var now = new Date();   // Lấy thời gian hiện tại
+                var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
+                var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+                var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại
+                document.write(now+date+month+year)
+                function bai1(){
+                    if(month<=3 && month>=1){document.write("Mùa Xuân");}
+                    if(month<=6 && month>=4){document.write("Mùa Hè");}
+                    if(month<=9 && month>=7){document.write("Mùa Thu");}
+                    if(month<=12 && month>=10){document.write("Mùa Đông");}
+                }
+                bai1();
+            
+            // BAI2
+                function bai2(w){
+                    if(typeof w == "string"){  
+                        document.write("chuoi cua ban la " + w.slice(0,9)+"..." )
+                        
+                    }
+                    if(typeof w == "number"){
+                        document.write("chuoi cua ban la " + w.toString().slice(0,9)+"..." )
+                    }
+                }
+
+            // BAI3
+                function bai3(x){
+                    if(x>=0 && x<=3.9){document.write("Bạn Đạt Điểm F");}
+                    if(x>=4 && x<=5.4){document.write("Bạn Đạt Điểm D");}
+                    if(x>=5.5 && x<=6.9){document.write("Bạn Đạt Điểm C");}
+                    if(x>=7 && x<=8.4){document.write("Bạn Đạt Điểm B");}
+                    if(x>=8.5 && x<=10){document.write("Bạn Đạt Điểm A");}
+                
+            }
+
+            // BAI4
+                function translate(x){
+                    switch(x){
+                        case 0:
+                            document.write("Ciao(Italian)")
+                            break;
+                        case 1:
+                            document.write("Hola(Spanish)")
+                            break;
+                        case 2:
+                            document.write("Bonjour(French)")
+                            break;
+                        case 3:
+                            document.write("Hallo(German)")
+                            break;
+                        case 4:
+                            document.write("Xin Chào(Vietnamese)")
+                            break;
+                    }
+                translate(x);
+                }
+                
+
+            // BAI5
+                function bai5(a){
+                    document.write(a.indexOf(true)+1)
+                }
+
+            //BAI6
+                function bai6(num){
+                    var i=0;
+                    while(i<=num){i++;
+                    if(i%2==0){document.write("<div style='color:green'>"+i+"</div>")}
+                    if(i%2!=0){document.write("<div style='color:red'>"+i+"</div>")}
+                    }
+                }  
+                bai6(99); 
+        </script>
+    </body>
+</html>
